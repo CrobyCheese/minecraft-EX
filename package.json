@@ -4,7 +4,7 @@
   "description": "Minecraft in your browser.",
   "scripts": {
     "start": "cd src/minecraftjs && webpack serve",
-    "build1": "rm -f web/*.js*; cd src/minecraftjs && webpack --env prod",
+    "build1": "rm -f docs/*.js*; cd src/minecraftjs && webpack --env prod",
     "build": "npm run build1"
   },
   "keywords": [
