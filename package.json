@@ -1,0 +1,34 @@
+{
+  "name": "Minecraft JS",
+  "version": "0.0.1",
+  "description": "Minecraft in your browser.",
+  "scripts": {
+    "start": "cd src/minecraftjs && webpack serve",
+    "build1": "rm -f web/*.js*; cd src/minecraftjs && webpack --env prod",
+    "build": "npm run build1"
+  },
+  "keywords": [
+    "noa-engine",
+    "noa",
+    "voxel",
+    "game",
+    "engine",
+    "example"
+  ],
+  "author": "Ryan Koop",
+  "license": "none",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abso1utezer0/minecraft-js.git"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.0.0-alpha.62",
+    "noa-engine": "^0.32.0",
+    "voxel-crunch": "^0.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
