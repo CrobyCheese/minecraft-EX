@@ -38,11 +38,11 @@ var PROFILE_RENDER = 0
 
 
 var defaultOptions = {
-    debug: false,
+    debug: true,
     silent: false,
-    playerHeight: 1.8,
+    playerHeight: 3.8,
     playerWidth: 0.6,
-    playerStart: [0, 10, 0],
+    playerStart: [0, 0, 0],
     playerAutoStep: false,
     tickRate: 30,           // ticks per second
     maxRenderRate: 0,       // max FPS, 0 for uncapped 
@@ -132,7 +132,7 @@ export class Engine extends EventEmitter {
          * String identifier for the current world. 
          * It's safe to ignore this if your game has only one level/world. 
         */
-        this.worldName = 'default'
+        this.worldName = 'New World'
 
         /**
          * Multiplier for how fast time moves. Setting this to a value other than 
